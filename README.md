@@ -14,7 +14,7 @@
 
 ### 设置编辑模式
 
-### 添加并同步github项目
+### 添加新git项目并同步到github网站
 1. 将要上传的文件夹改名为项目名称，如 whh-python-homework
 2. 在github网站建立一个同名空的项目，如新建的项目：
    https://github.com/apricoteriop456/whh-python-homework
