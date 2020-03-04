@@ -27,3 +27,9 @@
    https://github.com/apricoteriop456/whh-python-homework 复制进去，回车，这步操作旨在本地仓库与远程仓库之间建立链接。
 8. 源代码管理，点击 右上角 ... ,选择推送到 ，下面选择默认即可
 9. 刷新github网站项目地址是否已同步所有内容
+
+### 使用sql
+1. 在打开的sql文件中按下快捷键`Ctrl+~`，在弹出窗口输入`pgsql`，回车；或者在sql文件中输入`pgsql`，再`Ctrl+Enter`就可使用sql。
+2. 按快捷键`Ctrl+K+M`，输入`postgres`，回车。
+3. 点击窗口下方状态栏`Select Postgres Server`，点击`localhost`，再点击我们需要连接的数据库，比如`dvdrental`即可自动补全。
+4. 在sql文件中执行sql语句可以按`Alt+Enter`或者`Ctrl+Enter`，在运行select语句时用前者较好；执行postgres语句只能按`Ctrl+Enter`。
