@@ -29,7 +29,11 @@
 9. 刷新github网站项目地址是否已同步所有内容
 
 ### 使用sql
-1. 在打开的sql文件中按下快捷键`Ctrl+~`，在弹出窗口输入`pgsql`，回车；或者在sql文件中输入`pgsql`，再`Ctrl+Enter`就可使用sql。
-2. 按快捷键`Ctrl+K+M`，输入`postgres`，回车。
-3. 点击窗口下方状态栏`Select Postgres Server`，点击`localhost`，再点击我们需要连接的数据库，比如`dvdrental`即可自动补全。
-4. 在sql文件中执行sql语句可以按`Alt+Enter`或者`Ctrl+Enter`，在运行select语句时用前者较好；执行postgres语句只能按`Ctrl+Enter`。
+1. 启动SQL服务器：
+   - 在打开的sql文件中按下快捷键`Ctrl+~`，下方弹出CMD终端窗口，在弹出窗口输入`pgsql`，回车.
+   - 或者在打开的sql文件中按下快捷键`Ctrl+~`，下方弹出CMD终端窗口，按下`Ctrl+1`,光标回到上方SQL文件上，按下快捷键`Alt+P`,即可启动SQL.
+2. 切换postgres语言模式按快捷键`Ctrl+K,M`，输入`postgres`，回车。
+3. 进入某个数据库:点击窗口下方状态栏`Select Postgres Server`，点击`localhost`，再点击我们需要连接的数据库，比如`dvdrental`就进入了`dvdrental`数据库，此时在sql文件中编写语句出现自动补全。
+4. 执行sql语句：光标放在该条语句上，按下`Ctrl+Enter`,下方终端出现运行语句及结果。按下`Alter+Enter`,该语句运行结果以表的形式展示。执行postgres语句，如\d,\help，只能按下`Ctrl+Enter`执行.
+
+
