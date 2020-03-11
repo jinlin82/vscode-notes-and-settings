@@ -37,3 +37,10 @@
 4. 执行sql语句：光标放在该条语句上，按下`Ctrl+Enter`,下方终端出现运行语句及结果。按下`Alter+Enter`,该语句运行结果以表的形式展示。执行postgres语句，如\d,\help，只能按下`Ctrl+Enter`执行.
 
 
+# 设置
+1. "`editor.parameterHints`": `false` 关闭函数提示面板
+2. "`editor.suggestOnTriggerCharacters`": `false` Controls whether suggestions
+   should automatically show up when typing trigger characters.
+   需要时可以使用快捷键(在快捷键设置中查询 `trigger suggest`)打开.
+
+
