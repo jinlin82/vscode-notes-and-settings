@@ -28,6 +28,15 @@
 8. 源代码管理，点击 右上角 ... ,选择推送到 ，下面选择默认即可
 9. 刷新github网站项目地址是否已同步所有内容
 
+
+# 设置
+1. "`editor.parameterHints`": `false` 关闭函数提示面板
+2. "`editor.suggestOnTriggerCharacters`": `false` Controls whether suggestions
+   should automatically show up when typing trigger characters.
+   需要时可以使用快捷键(在快捷键设置中查询 `trigger suggest`)打开.
+
+# 编程语言支持
+## SQL 支持
 ### 使用sql
 1. 启动SQL服务器：
    - 在打开的sql文件中按下快捷键`Ctrl+~`，下方弹出CMD终端窗口，在弹出窗口输入`pgsql`，回车.
@@ -35,12 +44,5 @@
 2. 切换postgres语言模式按快捷键`Ctrl+K,M`，输入`postgres`，回车。
 3. 进入某个数据库:点击窗口下方状态栏`Select Postgres Server`，点击`localhost`，再点击我们需要连接的数据库，比如`dvdrental`就进入了`dvdrental`数据库，此时在sql文件中编写语句出现自动补全。
 4. 执行sql语句：光标放在该条语句上，按下`Ctrl+Enter`,下方终端出现运行语句及结果。按下`Alter+Enter`,该语句运行结果以表的形式展示。执行postgres语句，如\d,\help，只能按下`Ctrl+Enter`执行.
-
-
-# 设置
-1. "`editor.parameterHints`": `false` 关闭函数提示面板
-2. "`editor.suggestOnTriggerCharacters`": `false` Controls whether suggestions
-   should automatically show up when typing trigger characters.
-   需要时可以使用快捷键(在快捷键设置中查询 `trigger suggest`)打开.
 
 
