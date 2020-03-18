@@ -76,11 +76,19 @@
 
 ## RMarkdown 编译步骤
 ### 软件要求
-1. `pandoc`
-2. R https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/base/old/3.5.3/R-3.5.3-win.exe
-3. R packages: knitr, rmarkdown, bookdown, reticulate
-4. bat, R
-   
+1. `pandoc`:下载并安装 `anaconda`，安装时勾选那两个添加环境变量的选项，并且添加
+   环境变量 `C:\Anaconda3\Scripts`，如果 `anaconda`装在其他盘将 `C` 改成相应盘；在
+   `cmd` 中运行 `pandoc -v` ，如果没有出现错误则说明安装成功。
+2. R：在`https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/base/old/3.5.3/R-3.5.3-win.exe`
+   下载 `R` ，安装之后设置环境变量如 `C:\Worktools\R\R-3.5.3\bin\x64` ，具体路径根据自
+   己安装位置确定，必须要添加 `R` 安装文件的 `\bin\x64` ，然后在
+   `cmd` 中运行 `r` ，若不出错则安装成功。
+3. R packages: 在 cmd 中分别运行 `install.packages('knitr')` ， `install.packages('rmarkdown')` ，
+   `install.packages('bookdown')` ， `install.packages('reticulate')` 四条代码，运行
+   成功之后再分别运行 `library(knitr)` ， `library(rmarkdown)` ，
+   `library(bookdown)`， `library(reticulate)` ，如果都加载成功说明已安装好。
+4. 在生成 `html` 文件时，要把自己写的 `rmd` 文件与 `rmd-html.bat` ，`rmd-html.R` 两个文件放在同一个文件夹。
+ 
 ### 操作步骤
 1. 打开文件夹作为项目
 2. run task
