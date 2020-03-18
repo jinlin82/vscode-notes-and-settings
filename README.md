@@ -93,13 +93,16 @@
 1. 右键点击需要的文件夹，选择 `Open Folder as VS Code Project` 来打开，没有配置好的，
    可以直接打开Vscode，点击左上角的`文件(F)`，然后选择`打开文件夹`，找到需要的文件夹，点击`选择文件夹`即可
    打开为VSCode项目。可以根据vscode底部颜色来判断打开的是不是文件夹，若底部为浅绿
-   色，则表明打开的是文件夹，若底部为紫色，则打开的是单个文件，不能生成htnl，需要按照上面的步骤打开文件夹才能生成html。
+   色，则表明打开的是文件夹，若底部为紫色，则打开的是单个文件，不能生成html，需要按照上面的步骤打开文件夹才能生成html。
    
 2. 在打开的rmd文件中按下快捷键`Ctrl+Shift+P`，输入 `run task`，选择第1条`Tasks：Run Task`，然后点击`rmd-html`即可
    生成html文件。
 
 ### 如何运行 Rmarkdown 中的 python 代码
-1. 
+1. 按`ctrl+K M`,在上方弹出的框中输入`python`,然后回车或者点击下方出现的`python`栏，就切换到了python语言模式，光标放在
+   python代码块所在的行，按`shift+enter`,即可运行该行python代码。
+2. 运行完python代码后，想要回到Rmarkdown语言模式，同样是按`ctrl+K M`，在上方弹出的框
+   中输入`Rmarkdown`,然后回车或者点击下方出现的`R Markdown`栏，就切换回了Rmarkdown语言模式。 
 
 
 ## org-mode 支持
