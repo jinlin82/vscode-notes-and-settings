@@ -54,6 +54,10 @@
 2. 切换postgres语言模式按快捷键`Ctrl+K,M`，输入`postgres`，回车。
 3. 进入某个数据库:点击窗口下方状态栏`Select Postgres Server`，点击`localhost`，再点击我们需要连接的数据库，比如`dvdrental`就进入了`dvdrental`数据库，此时在sql文件中编写语句出现自动补全。
 4. 执行sql语句：光标放在该条语句上，按下`Ctrl+Enter`,下方终端出现运行语句及结果。按下`Alter+Enter`,该语句运行结果以表的形式展示。执行postgres语句，如\d,\help，只能按下`Ctrl+Enter`执行.
+5. sql关键词变大写：按`Ctrl+Shift+x`，在拓展商店中搜索 `Upper Case SQL` 并安装，
+   安装后重启，在打开的sql文件中按 `CTRL+ALT+S` 可以将小写关键词转化为大写(如
+   select转为SELECT等)，还有如: `SFW: SELECT FROM WHERE`等模板可在 Upper Case
+   SQL 介绍中查看。
 
 ## R 支持
    1. Yuki Ueda R package
