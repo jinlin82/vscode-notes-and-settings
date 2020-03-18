@@ -59,7 +59,7 @@
 2. 在出现的界面搜索`project git`,点击`在settings.json中编辑`。
 3. 按下快捷键`Ctrl+F`,搜索`project`,在`projectManager.git.baseFolders `地方指示要搜索 Git 项目的基本文件夹，将路径改为github_repo文件夹的路径（例如：D:\\github_repo）在`projectManager.vscode.baseFolders `地方指定要搜索 VSCode 项目的基本文件夹，将路径改为github_repo文件夹的路径，同上，然后按`Ctrl+S`保存。
 4. 按下快捷键`Ctrl+Shift+X`，在拓展商店中搜索 `project tree` 插件并安装该插件。
-5. 按下快捷键`Ctrl+shift+P`,输入`project tree`,点击`project tree`，即可在README.RMD文件生成该项目的目录树,该步骤前提是在该项x目中提前创建一个README.RMD文件。
+5. 按下快捷键`Ctrl+shift+P`,输入`project tree`,点击`project tree`，即可在README.RMD文件生成该项目的目录树,该步骤前提是在该项目中提前创建一个README.RMD文件。
 # Git 版本控制
 ### 添加新git项目并同步到github网站
 1. 将要上传的文件夹改名为项目名称，如 whh-python-homework
@@ -149,10 +149,3 @@
 
 # 网站支持
 ## leetcode
-
-```
-vscode-notes
-├─ .git
-└─ README.md
-
-```
