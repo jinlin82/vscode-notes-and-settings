@@ -14,7 +14,11 @@
 
 ### 更改编辑模式
 
-## 配置 Task
+### 配置 Task
+
+### 项目管理
+
+### 生成项目目录树
 
 # Git 版本控制
 ### 添加新git项目并同步到github网站
@@ -53,7 +57,7 @@
 
 ## R 支持
    1. Yuki Ueda R package
-   2. 使用 R.exe 时不能显示和输入中文，故使用 radian.exe 代替, 使用
+   2. 使用 `R.exe` 时不能显示和输入中文，故使用 `radian.exe` 代替, 使用
       =pip install radian= 安装
    3. R LSP Client 支持更好，但含有中文时有bug
    4. 备选的 R-tools 也可以支持补全，但没有 R LSP Client 支持的好，并且安装复杂，
@@ -65,6 +69,21 @@
 ## Python 支持
 
 ## Markdown 支持
+
+## RMarkdown 编译步骤
+### 软件要求
+1. `pandoc`
+2. R https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/base/old/3.5.3/R-3.5.3-win.exe
+3. R packages: knitr, rmarkdown, bookdown, reticulate
+4. bat, R
+   
+### 操作步骤
+1. 打开文件夹作为项目
+2. run task
+
+### 如何运行 Rmarkdown 中的 python 代码
+1. 
+
 
 ## org-mode 支持
 
