@@ -1,3 +1,34 @@
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [简介](#简介)
+    - [资源](#资源)
+- [基本概念](#基本概念)
+- [常见操作](#常见操作)
+    - [-](#-)
+    - [更改编辑模式](#更改编辑模式)
+    - [配置 Task](#配置-task)
+    - [项目管理](#项目管理)
+    - [生成项目目录树](#生成项目目录树)
+- [Git 版本控制](#git-版本控制)
+    - [-](#--1)
+- [设置](#设置)
+- [编程语言支持](#编程语言支持)
+    - [SQL 支持](#sql-支持)
+    - [R 支持](#r-支持)
+    - [Python 支持](#python-支持)
+    - [Markdown 支持](#markdown-支持)
+    - [RMarkdown 编译步骤](#rmarkdown-编译步骤)
+        - [软件要求](#软件要求)
+        - [操作步骤](#操作步骤)
+        - [如何运行 Rmarkdown 中的 python 代码](#如何运行-rmarkdown-中的-python-代码)
+    - [org-mode 支持](#org-mode-支持)
+- [网站支持](#网站支持)
+    - [leetcode](#leetcode)
+
+<!-- markdown-toc end -->
+
+
 # 简介
 
 ## 资源
