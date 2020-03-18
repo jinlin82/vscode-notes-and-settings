@@ -49,13 +49,17 @@
 ### 配置 Task
 
 ### 项目管理
-打开软件vscode，按下快捷键`Ctrl+X,P`,在界面左边会有`GIT`、`VSCODE`和`FAVORITES`三部分，在`GIT`部分会看到自己参与的github上面的所有项目，用哪个项目点击哪个项目就可以，这样就可以随意切换项目，不用麻烦从文件夹里面打开项目了。
+打开软件vscode，按下快捷键`Ctrl+X,P`,在界面左边会有`GIT`、`VSCODE`和`FAVORITES`
+三部分，在`GIT`部分会看到自己参与的github上面的所有项目，用哪个项目点击哪个项目
+就可以，这样就可以随意切换项目，不用麻烦从文件夹里面打开项目了。
+
+若出错，可以尝试按下快捷键 `Ctrl+shift+P`,输入`project manager: refresh projects`,回车刷新项目即可。
 ### 生成项目目录树
 1. 利用上步骤方法打开项目之后，点击界面左上角`文件`+`首选项`+`设置`。
 2. 在出现的界面搜索`project git`,点击`在settings.json中编辑`。
 3. 按下快捷键`Ctrl+F`,搜索`project`,在`projectManager.git.baseFolders `地方指示要搜索 Git 项目的基本文件夹，将路径改为github_repo文件夹的路径（例如：D:\\github_repo）在`projectManager.vscode.baseFolders `地方指定要搜索 VSCode 项目的基本文件夹，将路径改为github_repo文件夹的路径，同上，然后按`Ctrl+S`保存。
 4. 按下快捷键`Ctrl+Shift+X`，在拓展商店中搜索 `project tree` 插件并安装该插件。
-5. 按下快捷键`Ctrl+shift+P`,输入`project tree`,点击`project tree`，即可在README.RMD文件生成该项目的目录树,该步骤前提是在该项目中提前创建一个README.RMD文件。
+5. 按下快捷键`Ctrl+shift+P`,输入`project tree`,点击`project tree`，即可在README.RMD文件生成该项目的目录树,该步骤前提是在该项x目中提前创建一个README.RMD文件。
 # Git 版本控制
 ### 添加新git项目并同步到github网站
 1. 将要上传的文件夹改名为项目名称，如 whh-python-homework
