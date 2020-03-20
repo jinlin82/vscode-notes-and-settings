@@ -5,12 +5,15 @@
     - [资源](#资源)
 - [基本概念](#基本概念)
 - [常见操作](#常见操作)
-    - [更改编辑模式](#更改编辑模式)
-    - [配置 Task](#配置-task)
-    - [项目管理](#项目管理)
-    - [生成项目目录树](#生成项目目录树)
+    - [基本操作](#基本操作)
+        - [改变界面语言](#改变界面语言)
+        - [更改编辑模式](#更改编辑模式)
+        - [配置 Task](#配置-task)
+        - [项目管理](#项目管理)
+        - [生成项目目录树](#生成项目目录树)
 - [Git 版本控制](#git-版本控制)
-    - [-](#--1)
+    - [Github 相关](#github-相关)
+        - [添加新git项目并同步到github网站](#添加新git项目并同步到github网站)
 - [设置](#设置)
 - [编程语言支持](#编程语言支持)
     - [SQL 支持](#sql-支持)
@@ -28,15 +31,18 @@
 <!-- markdown-toc end -->
 
 
+
 # 简介
 
 ## 资源
 1. 官方文档：https://code.visualstudio.com/docs
-2. 官方文档中文翻译：
 
 # 基本概念
 
 # 常见操作
+
+## 基本操作
+
 ### 改变界面语言
 1. 按下快捷键`Ctrl+Shift+P`,输入`language`,选择`Configure Display Language`
 2. 在弹出的选项中选择`zh_cn`，即可改变界面语言为中文
@@ -44,7 +50,9 @@
 
 ### 更改编辑模式
 1. 按`ctrl+K M`,在上方弹出的框中输入`python`,然后回车。或者点击右下方出现的`R Markdown`栏，就切换到了python语言模式，如果想要回到Rmarkdown语言模式，同样是按`ctrl+K,M`，在上方弹出的框
-   中输入`R markdown`,然后回车或者点击下方出现的`python`栏，就切换回了R markdown语言模式。 
+   中输入`R markdown`,然后回车或者点击下方出现的`python`栏，就切换回了R markdown
+   语言模式。
+   
 ### 配置 Task
 
 ### 项目管理
@@ -59,8 +67,13 @@
 3. 按下快捷键`Ctrl+F`,搜索`project`,在`projectManager.git.baseFolders `地方指示要搜索 Git 项目的基本文件夹，将路径改为github_repo文件夹的路径（例如：D:\\github_repo）在`projectManager.vscode.baseFolders `地方指定要搜索 VSCode 项目的基本文件夹，将路径改为github_repo文件夹的路径，同上，然后按`Ctrl+S`保存。
 4. 按下快捷键`Ctrl+Shift+X`，在拓展商店中搜索 `project tree` 插件并安装该插件。
 5. 按下快捷键`Ctrl+shift+P`,输入`project tree`,点击`project tree`，即可在README.RMD文件生成该项目的目录树,该步骤前提是在该项目中提前创建一个README.RMD文件。
+
 # Git 版本控制
+
+## Github 相关
+
 ### 添加新git项目并同步到github网站
+
 1. 将要上传的文件夹改名为项目名称，如 whh-python-homework
 2. 在github网站建立一个同名空的项目，如新建的项目：
    https://github.com/apricoteriop456/whh-python-homework
