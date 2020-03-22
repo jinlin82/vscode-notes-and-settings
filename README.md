@@ -75,17 +75,19 @@ projects`,回车刷新项目即可。
    文件。
    
 ### live share——可以与他人实时进行协作式编辑和调试的插件
-1. 安装live share按下快捷键`Ctrl+shift+X`,搜索`live share`,然后安装该插件。
+1. 安装live share
+* 按下快捷键`Ctrl+shift+X`,搜索`live share`,然后安装该插件。
 2. 使用live share 
-  2.1 按下快捷键`Ctrl+shift+P`，搜索`live share`,选择`live
+* 第一种方法： 按下快捷键`Ctrl+shift+P`，搜索`live share`,选择`live
    share:开始协作（共享）`,再次按下快捷键`Ctrl+shift+P`，搜索`live share`,选择
    `live share:复制协作链接`可以将链接分享给他人，选择
    `live share:停止会话协作`，可以结束当前会话。
-   2.2 按下快捷键`Ctrl+shift+A`，打开侧边栏，侧边栏里面有live share的图标，点
+* 第二种方法：按下快捷键`Ctrl+shift+A`，打开侧边栏，侧边栏里面有live share的图标，点
    击，在页面左边出现三部分：会话信息、联系人和帮助。在会话信息栏，可以选择加入
    协作会话、开始写作会话和启动只读写作会话。这种方式打开live share更加方便。
 3. 加入别人发起的会话
-将别人分享的协作链接用浏览器打开，在弹出的页面内点击加入会话。
+* 将别人分享的协作链接用浏览器打开，在弹出的页面内点击加入会话。
+
 
 
 # Git 版本控制
