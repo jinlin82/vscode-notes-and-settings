@@ -158,24 +158,11 @@ projects`,回车刷新项目即可。
 ## Markdown 支持
 
 ## RMarkdown 编译步骤
-### 软件要求
-1. `pandoc`:下载并安装 `anaconda`，安装时勾选那两个添加环境变量的选项，并且添加
-   环境变量 `C:\Anaconda3\Scripts`，如果 `anaconda`装在其他盘将 `C` 改成相应盘；
-   在`cmd` 中运行 `pandoc -v` ，如果没有出现错误则说明安装成功。
-2. R：在
-   `https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/base/old/3.5.3/R-3.5.3-win.exe`
-   下载 `R` ，安装之后设置环境变量如 `C:\Worktools\R\R-3.5.3\bin\x64` ，具体路径
-   根据自己安装位置确定，必须要添加 `R` 安装文件的 `\bin\x64` ，然后在`cmd` 中运
-   行 `r` ，若不出错则安装成功。
-3. R packages: 在 cmd 中分别运行 `install.packages('knitr')` ，
-   `install.packages('rmarkdown')` ，`install.packages('bookdown')` ，
-   `install.packages('reticulate')` 四条代码，运行成功之后再分别运行
-   `library(knitr)` ， `library(rmarkdown)` ，`library(bookdown)`，
-   `library(reticulate)` ，如果都加载成功说明已安装好。
-4. 在生成 `html` 文件时，要把自己写的 `rmd` 文件与 `rmd-html.bat` ，`rmd-html.R`
-   两个文件放在同一个文件夹。
+
+更详细文档见[这里](https://github.com/jinlin82/rmd-article-template/blob/master/README.MD#rmd%E6%96%87%E4%BB%B6%E5%9C%A8-vscode-%E4%B8%AD%E7%BC%96%E8%AF%91%E6%AD%A5%E9%AA%A4)。
 
 ### 操作步骤
+
 1. 右键点击需要的文件夹，选择 `Open Folder as VS Code Project` 来打开，没有配置
    好的，可以直接打开Vscode，点击左上角的`文件(F)`，然后选择`打开文件夹`，找到需
    要的文件夹，点击`选择文件夹`即可打开为VSCode项目。可以根据vscode底部颜色来判
@@ -184,8 +171,9 @@ projects`,回车刷新项目即可。
 
 2. 在打开的rmd文件中按下快捷键`Ctrl+Shift+P`，输入 `run task`，选择第1条`Tasks：
    Run Task`，然后点击`rmd-html`即可生成html文件。
-
+   
 ### 如何运行 Rmarkdown 中的 python 代码
+
 1. 按`ctrl+K M`,在上方弹出的框中输入`python`,然后回车或者点击下方出现的`python`
    栏，就切换到了python语言模式，光标放在python代码块所在的行，按`shift+enter`,
    即可运行该行python代码。
@@ -198,3 +186,7 @@ projects`,回车刷新项目即可。
 
 # 网站支持
 ## leetcode
+
+### 
+
+
