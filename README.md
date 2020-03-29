@@ -149,9 +149,9 @@ projects`,回车刷新项目即可。
    3. R LSP Client 支持更好，但含有中文时有bug
    4. 备选的 R-tools 也可以支持补全，但没有 R LSP Client 支持的好，并且安装复
       杂，具体安装步骤为：
-      1. 安装 Vscode R-tools package
-      2. 下载安装 .net core 2.1 版本(注意版本不能错，64位)，百度网盘下载链接：https://pan.baidu.com/s/10x3bYNkzkvsJmdIZsYaCeQ 提取码：va1q
-      3. R 要安装注册，让 R-tools 可以自动找到。
+      - 安装 Vscode R-tools package
+      - 下载安装 .net core 2.1 版本(注意版本不能错，64位)，百度网盘下载链接：https://pan.baidu.com/s/10x3bYNkzkvsJmdIZsYaCeQ 提取码：va1q
+      - R 要安装注册，让 R-tools 可以自动找到。
 
 ## Python 支持
 
