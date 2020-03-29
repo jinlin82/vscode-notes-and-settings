@@ -120,9 +120,9 @@ projects`,回车刷新项目即可。
    should automatically show up when typing trigger characters.需要时可以使用快
    捷键(在快捷键设置中查询 `trigger suggest`)打开.
 3. 关闭自动更新
-   1. `python.autoUpdateLanguageServer`
-   2. `extensions.autoUpdate`
-   3. `update.enableWindowsBackgroundUpdates`
+   - `python.autoUpdateLanguageServer`
+   - `extensions.autoUpdate`
+   - `update.enableWindowsBackgroundUpdates`
 
 # 编程语言支持
 ## SQL 支持
