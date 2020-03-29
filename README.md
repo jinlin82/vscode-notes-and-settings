@@ -20,13 +20,14 @@
     - [R 支持](#r-支持)
     - [Python 支持](#python-支持)
     - [Markdown 支持](#markdown-支持)
+    - [如何运用VSCODE在Rmarkdown中引用参考文献](#如何运用vscode在rmarkdown中引用参考文献)
     - [RMarkdown 编译步骤](#rmarkdown-编译步骤)
-        - [软件要求](#软件要求)
         - [操作步骤](#操作步骤)
         - [如何运行 Rmarkdown 中的 python 代码](#如何运行-rmarkdown-中的-python-代码)
     - [org-mode 支持](#org-mode-支持)
 - [网站支持](#网站支持)
     - [leetcode](#leetcode)
+        - [](#)
 
 <!-- markdown-toc end -->
 
@@ -156,6 +157,21 @@ projects`,回车刷新项目即可。
 ## Python 支持
 
 ## Markdown 支持
+
+## 如何运用VSCODE在Rmarkdown中引用参考文献
+
+1. 在所创建的项目中添加上面生成的`Bibfile.bib`文件；
+2. 通过VSCODE中的设置获得参考文献自动补全功能。
+   
+打开VSCODE的设置选项(可以通过快捷键:英文状态下`ctrl+,`打开或者点击`文件-首选项-设置` 打开),输入`suggest tr`,在弹出的选项中勾选第一条"控制在键入触发字符后是否自动显示建议"。这里的触发字符即为`@`,勾选该选项表示在引用参考文献时，只要当光标停在`[@]`的`@`后面,系统会自动弹出所有"Bibfile"中的"key",然后用户选择要引用的参考文献即可。通过自动输入可以防止输入错误,而且使用快捷。
+
+3.在Rmd文件末尾加
+```
+# 参考文献[//]: 
+ (\bibliography{Bibfile})"
+```
+
+**注:** 引用时,参考文献必须要有`[]`才能起作用；引用的时候要有空格然后再引用；`@`的时候如果不出来参考文献列表,用快捷键`ctrl+'`,正确的示例是:`text [@bibkey]`.
 
 ## RMarkdown 编译步骤
 
