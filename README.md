@@ -157,6 +157,15 @@ projects`,回车刷新项目即可。
 
 ## Markdown 支持
 
+### 如何在 Markdown 中折叠大纲
+
+1. 一般写文章语言格式设置为 `Markdown` 语言模式，在写 `R` 代码的时候设置为 `R Markdown` 模式，写 `Python` 代码时设置为 `Python` 模式。
+2. 折叠操作只在 `Markdown` 语言模式下可以使用，`R Markdown` 模式下不可用。
+3. 全部折叠快捷键：先按 `ctrl+K` ，再按 `ctrl+0` 。
+4. 全部展开快捷键：先按 `ctrl+K` ，再按 `ctrl+J` 。
+5. 部分展开快捷键：把光标移动到想要展开的位置，先按 `ctrl+K` ，再按 `ctrl+L` 。
+6. 如果快捷键不对或者使用没效果，按快捷键 `Ctrl+Shift+P` ，输入 `fold` ，查看相应操作命令的快捷键，再用自己的快捷键操作，或者直接点击命令进行相应操作。
+
 ## 如何运用VSCODE在Rmarkdown中引用参考文献
 
 1. 在所创建的项目中添加上面生成的`Bibfile.bib`文件；
