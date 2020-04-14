@@ -20,6 +20,7 @@
     - [R 支持](#r-支持)
     - [Python 支持](#python-支持)
     - [Markdown 支持](#markdown-支持)
+        - [如何在 Markdown 中折叠大纲](#如何在-markdown-中折叠大纲)
     - [如何运用VSCODE在Rmarkdown中引用参考文献](#如何运用vscode在rmarkdown中引用参考文献)
     - [RMarkdown 编译步骤](#rmarkdown-编译步骤)
         - [操作步骤](#操作步骤)
