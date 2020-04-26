@@ -21,6 +21,7 @@
     - [Python 支持](#python-支持)
     - [Markdown 支持](#markdown-支持)
         - [如何在 Markdown 中折叠大纲](#如何在-markdown-中折叠大纲)
+        - [预览功能](#预览功能)
     - [如何运用VSCODE在Rmarkdown中引用参考文献](#如何运用vscode在rmarkdown中引用参考文献)
     - [RMarkdown 编译步骤](#rmarkdown-编译步骤)
         - [操作步骤](#操作步骤)
@@ -166,7 +167,17 @@ projects`,回车刷新项目即可。
 3. 全部折叠快捷键：先按 `ctrl+K` ，再按 `ctrl+0` 。
 4. 全部展开快捷键：先按 `ctrl+K` ，再按 `ctrl+J` 。
 5. 部分展开快捷键：把光标移动到想要展开的位置，先按 `ctrl+K` ，再按 `ctrl+L` 。
-6. 如果快捷键不对或者使用没效果，按快捷键 `Ctrl+Shift+P` ，输入 `fold` ，查看相应操作命令的快捷键，再用自己的快捷键操作，或者直接点击命令进行相应操作。
+6. 如果快捷键不对或者使用没效果，按快捷键 `Ctrl+Shift+P` ，输入 `fold` ，查看相
+   应操作命令的快捷键，再用自己的快捷键操作，或者直接点击命令进行相应操作。
+   
+### 预览功能
+1. Markdown all in One 带的预览功能不稳健，较容易出错，使用 markdown preview enhanced
+2. 预览中支持章节数字编号：利用everything搜索`style.less`，将该项目里面的`style.less`文件替换掉
+   `C:\Users\*\.mume\`路径下面的`style.less`文件。
+3. 预览功能要在语言模式为 `markdown` 模式才可行。
+4. 设置快捷键。打开`键盘快捷方式`，搜索
+   `markdown-preview-enhanced.openPreviewToTheSide`,
+   把`键绑定`设置为`Ctrl+k,Ctrl+v`。这时可以按下`Ctrl+k,Ctrl+v`快捷键，调出高级预览。
 
 ## 如何运用VSCODE在Rmarkdown中引用参考文献
 
@@ -183,15 +194,6 @@ projects`,回车刷新项目即可。
 
 **注:** 引用时,参考文献必须要有`[]`才能起作用；引用的时候要有空格然后再引用；
 `@`的时候如果不出来参考文献列表,用快捷键`ctrl+'`,正确的示例是:`text [@bibkey]`.
-
-### 预览功能
-1. Markdown all in One 带的预览功能不稳健，较容易出错，使用 markdown preview enhanced
-2. 预览中支持章节数字编号：利用everything搜索`style.less`，将该项目里面的`style.less`文件替换掉
-   `C:\Users\*\.mume\`路径下面的`style.less`文件。
-3. 预览功能要在语言模式为 `markdown` 模式才可行。
-4. 设置快捷键。打开`键盘快捷方式`，搜索
-   `markdown-preview-enhanced.openPreviewToTheSide`,
-   把`键绑定`设置为`Ctrl+k,Ctrl+v`。这时可以按下`Ctrl+k,Ctrl+v`快捷键，调出高级预览。
 
 ## RMarkdown 编译步骤
 
@@ -216,7 +218,6 @@ projects`,回车刷新项目即可。
 2. 运行完python代码后，想要回到Rmarkdown语言模式，同样是按`ctrl+K M`，在上方弹出
    的框中输入`Rmarkdown`,然后回车或者点击下方出现的`R Markdown`栏，就切换回了
    Rmarkdown语言模式。 
-
 
 ## org-mode 支持
 
