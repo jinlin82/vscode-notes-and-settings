@@ -124,6 +124,7 @@ projects`,回车刷新项目即可。
    - `python.autoUpdateLanguageServer`
    - `extensions.autoUpdate`
    - `update.enableWindowsBackgroundUpdates`
+4. 减少line number空白。在`设置`里面搜索`glyph`，取消`Glyph Margin`。
 
 # 编程语言支持
 ## SQL 支持
@@ -180,7 +181,17 @@ projects`,回车刷新项目即可。
  (\bibliography{Bibfile})"
 ```
 
-**注:** 引用时,参考文献必须要有`[]`才能起作用；引用的时候要有空格然后再引用；`@`的时候如果不出来参考文献列表,用快捷键`ctrl+'`,正确的示例是:`text [@bibkey]`.
+**注:** 引用时,参考文献必须要有`[]`才能起作用；引用的时候要有空格然后再引用；
+`@`的时候如果不出来参考文献列表,用快捷键`ctrl+'`,正确的示例是:`text [@bibkey]`.
+
+### 预览功能
+1. Markdown all in One 带的预览功能不稳健，较容易出错，使用 markdown preview enhanced
+2. 预览中支持章节数字编号：利用everything搜索`style.less`，将该项目里面的`style.less`文件替换掉
+   `C:\Users\*\.mume\`路径下面的`style.less`文件。
+3. 预览功能要在语言模式为 `markdown` 模式才可行。
+4. 设置快捷键。打开`键盘快捷方式`，搜索
+   `markdown-preview-enhanced.openPreviewToTheSide`,
+   把`键绑定`设置为`Ctrl+k,Ctrl+v`。这时可以按下`Ctrl+k,Ctrl+v`快捷键，调出高级预览。
 
 ## RMarkdown 编译步骤
 
