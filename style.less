@@ -1,0 +1,83 @@
+
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */ 
+
+.markdown-preview.markdown-preview {
+  // modify your style here
+  // eg: background-color: blue;
+  h1,h2,h3,h4,h5,h6{
+    font-weight:bold;
+    color:purple;
+    line-height:1em;
+    }
+    
+    h2,h3{
+    border-bottom: 4px solid #f7f7f7;
+    }
+    
+    .title{
+        font-weight:bold;
+        font-size:1.8em;
+        text-align: center;	
+    }
+    
+    .author{
+    text-align: center	
+    }
+    
+    .date{
+    text-align: center	
+    }
+    
+    
+    h4,h5,h6{ font-weight: bold; }
+    h1{ font-size:1.5em; }
+    h2{ font-size:1.3em; }
+    h3{ font-size:1.1em; }
+    h4{ font-size:1em; }
+    h5{ font-size:1em; }
+    h6{ font-size:0.9em; }
+    
+    
+        h1 { counter-increment: h1 }
+    
+    
+    h1 {
+        counter-reset: h2
+    }
+    
+    h2 {
+        counter-reset: h3
+    }
+    
+    h3 {
+        counter-reset: h4
+    }
+    
+    h4 {
+        counter-reset: h5
+    }
+    
+    h5 {
+        counter-reset: h6
+    }
+    
+    h1:before {
+        content: counter(h1) " "
+    }
+    
+    h2:before {
+        counter-increment: h2;
+        content: counter(h1) "." counter(h2) " "
+    }
+    
+    h3:before {
+        counter-increment: h3;
+        content: counter(h1) "." counter(h2) "." counter(h3) " "
+    }
+    
+    h4:before {
+        counter-increment: h4;
+        content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) " "
+    }
+}
