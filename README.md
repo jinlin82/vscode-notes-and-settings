@@ -42,6 +42,7 @@
 
 # 常见操作
 
+
 ## 基本操作
 
 ### 改变界面语言
@@ -93,6 +94,22 @@ projects`,回车刷新项目即可。
    协作会话、开始写作会话和启动只读写作会话。这种方式打开live share更加方便。
 4. 加入别人发起的会话
    * 将别人分享的协作链接用浏览器打开，在弹出的页面内点击加入会话。
+
+## 如何在vscode里面使用mermaid插件
+1. 第一步，安装插件。按下快捷键`Ctrl+shift+X`,搜索`mermaid`，安装`Markdown Preview Mermaid
+   Support`、`Markdown Preview`、`Mermaid Markdown Syntax Highlighting`、
+   `Mermaid Editor` 这四个插件。
+2. 第二步，增加环境变量。打开rapidee.exe，添加环境变量`C:\Worktools\node-v10.15.1-win-x86`。
+3. 第三步，修改_output.yml文件。将该文件里面`bookdown::html_document2:`和`bookdown::word_document2:`两部分的`pandoc_args:`语句下面增加两行语句：`  - --filter` `- mermaid-filter.cmd`,
+4. 第四步，在Markdown里面插入流程图、思维导图等图形。插入方法和插入python、R代码类似，具体使用教程，可以参考mermaid官网`https://mermaid-js.github.io/mermaid/#/`,图形效果如下图。
+```{.mermaid caption="标题" loc="." width=800}
+graph LR;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+5. mermaid做出的图没有同意编码，需要自己后期人工调整。
 
 # Git 版本控制
 
