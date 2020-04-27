@@ -101,7 +101,7 @@ projects`,回车刷新项目即可。
    `Mermaid Editor` 这四个插件。
 2. 第二步，增加环境变量。打开rapidee.exe，添加环境变量`C:\Worktools\node-v10.15.1-win-x86`。
 3. 第三步，修改_output.yml文件。将该文件里面`bookdown::html_document2:`和`bookdown::word_document2:`两部分的`pandoc_args:`语句下面增加两行语句：`  - --filter` `- mermaid-filter.cmd`,
-4. 第四步，在Markdown里面插入流程图、思维导图等图形。插入方法和插入python、R代码类似，具体使用教程，可以参考mermaid官网`https://mermaid-js.github.io/mermaid/#/`,图形效果如下图。
+4. 第四步，在Markdown里面插入流程图、思维导图等图形。插入方法和插入python、R代码类似，具体使用教程，可以参考mermaid官网`https://mermaid-js.github.io/mermaid/#/`,举个简单的例子：
 ```{.mermaid caption="标题" loc="." width=800}
 graph LR;
     A-->B;
@@ -109,7 +109,7 @@ graph LR;
     B-->D;
     C-->D;
 ```
-5. mermaid做出的图没有同意编码，需要自己后期人工调整。
+5. 注意！！mermaid做出的图没有统一编码，需要自己后期人工调整。
 
 # Git 版本控制
 
