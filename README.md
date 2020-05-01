@@ -97,7 +97,7 @@ projects`,回车刷新项目即可。
 
 ## 如何在vscode里面使用mermaid插件
 1. 第一步，安装插件。按下快捷键`Ctrl+shift+X`,搜索`mermaid`，安装`Markdown Preview Mermaid
-   Support`、`Markdown Preview`、`Mermaid Markdown Syntax Highlighting`、
+   Support`、`Mermaid Preview`、`Mermaid Markdown Syntax Highlighting`、
    `Mermaid Editor` 这四个插件。
 2. 第二步，增加环境变量。打开rapidee.exe，添加环境变量`C:\Worktools\node-v10.15.1-win-x86`。
 3. 第三步，修改_output.yml文件。将该文件里面`bookdown::html_document2:`和`bookdown::word_document2:`两部分的`pandoc_args:`语句下面增加两行语句：`  - --filter` `- mermaid-filter.cmd`,
@@ -109,7 +109,7 @@ graph LR;
     B-->D;
     C-->D;
 ```
-5. 注意！！mermaid做出的图没有统一编码，需要自己后期人工调整。
+1. 注意！！mermaid做出的图没有统一编码，需要自己后期人工调整。
 
 # Git 版本控制
 
