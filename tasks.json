@@ -1,0 +1,76 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "rmd-doc",
+            "type": "process",
+            "command": "rmd-doc.bat",
+            "args": [
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ]
+        },
+        {
+            "label": "rmd-html",
+            "type": "process",
+            "command": "rmd-html.bat",
+            "args": [
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "rmd-pdf",
+            "type": "process",
+            "command": "rmd-pdf.bat",
+            "args": [
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ]
+        },
+        {
+            "label": "rmd-beamer",
+            "type": "process",
+            "command": "rmd-beamer.bat",
+            "args": [
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ]
+        },
+        {
+            "label": "bookdown-pdf",
+            "type": "process",
+            "command": "bookdown-pdf.bat",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+	    "options": {
+            "cwd": "${fileDirname}"
+    },
+        },
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo",
+            "args": [
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ]
+        },
+        {
+            "label": "latex",
+            "type": "process",
+            "command": "xelatex",
+            "args": [
+                "${file}"
+            ]
+        },
+        {
+            "label": "mermaid-compile",
+            "type": "process",
+            "command": "mermaid-compile.bat",
+            "args": [
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ]
+        },
+    ]
+}

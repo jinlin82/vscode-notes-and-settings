@@ -95,12 +95,12 @@ projects`,回车刷新项目即可。
 4. 加入别人发起的会话
    * 将别人分享的协作链接用浏览器打开，在弹出的页面内点击加入会话。
 
-## 如何在vscode里面使用mermaid插件
+### 如何在vscode里面使用mermaid插件
 1. 第一步，安装插件。按下快捷键`Ctrl+shift+X`,搜索`mermaid`，安装`Markdown Preview Mermaid
    Support`、`Mermaid Preview`、`Mermaid Markdown Syntax Highlighting`、
    `Mermaid Editor` 这四个插件。
 2. 第二步，增加环境变量。打开rapidee.exe，添加环境变量`C:\Worktools\node-v10.15.1-win-x86`。
-3. 第三步，修改_output.yml文件。将该文件里面`bookdown::html_document2:`和`bookdown::word_document2:`两部分的`pandoc_args:`语句下面增加两行语句：`  - --filter` `- mermaid-filter.cmd`,
+3. 第三步，修改_output.yml文件。将该文件里面`bookdown::html_document2:`和`bookdown::word_document2:`两部分的`pandoc_args:`语句下面增加两行语句：`  - --filter` `- mermaid-filter.cmd`.
 4. 第四步，在Markdown里面插入流程图、思维导图等图形。插入方法和插入python、R代码类似，具体使用教程，可以参考mermaid官网`https://mermaid-js.github.io/mermaid/#/`,举个简单的例子：
 ```{.mermaid caption="标题" loc="." width=800}
 graph LR;
@@ -109,7 +109,30 @@ graph LR;
     B-->D;
     C-->D;
 ```
-5. 注意！！mermaid做出的图没有统一编码，需要自己后期人工调整。
+5. **注意**：mermaid做出的图没有统一编码，需要自己后期人工调整。
+
+### mermaid图片支持
+#### 软件支持
+1. 用项目里的tasks.json文件替换
+   `C:\Worktools\VSCode-win32-x64-1.42.0\data\user-data\User`路径下的tasks.json
+   文件
+2. 将`mermaid-compile.bat`文件放入`C:\Worktools\bat`目录下。
+3. 添加环境变量。在everything里面搜索mmdc.cmd，选择“打开路径”，按下快捷键
+   `Alt+D`，输入`addpath`,回车即可。或者也可以在rapidee里面添加路径
+   `C:\Worktools\node-v10.15.1-win-x86\node_modules\mermaid-filter\node_modules\.bin`
+4. 安装插件。按下快捷键`Ctrl+shift+X`,搜索svg,选择`SVG`进行安装。
+
+#### 图片支持
+1. 新建一个.mmd文件保存，并进行撰写。
+2. 编译mmd文件，选择快捷键`Ctrl+shift+P`，选择“运行任务”，选择`mermaid-compile`
+   运行。
+3. 调整图片清晰度。修改.svg文件，修改宽度width="1600",高度height="100%"，保存，点击右上角第一个
+   “预览SVG”，选择`Export PNG`将图片保存为.png格式。
+4. 将图片插入.rmd文件文件。在R的代码块里面利用`knitr::include_graphics`插入图片。
+
+
+
+
 
 # Git 版本控制
 
