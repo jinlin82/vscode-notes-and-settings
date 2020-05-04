@@ -117,8 +117,7 @@ graph LR;
    `C:\Worktools\VSCode-win32-x64-1.42.0\data\user-data\User`路径下的tasks.json
    文件
 2. 将`mermaid-compile.bat`文件放入`C:\Worktools\bat`目录下。
-3. 添加环境变量。在everything里面搜索mmdc.cmd，选择“打开路径”，按下快捷键
-   `Alt+D`，输入`addpath`,回车即可。或者也可以在rapidee里面添加路径
+3. 添加环境变量。在everything里面搜索mmdc.cmd，选择“打开路径”，按下快捷键   `Alt+D`，输入`addpath`,回车即可。或者也可以在rapidee里面添加路径
    `C:\Worktools\node-v10.15.1-win-x86\node_modules\mermaid-filter\node_modules\.bin`
 4. 安装插件。按下快捷键`Ctrl+shift+X`,搜索svg,选择`SVG`进行安装。
 
@@ -126,7 +125,7 @@ graph LR;
 1. 新建一个.mmd文件保存，并进行撰写。
 2. 编译mmd文件，选择快捷键`Ctrl+shift+P`，选择“运行任务”，选择`mermaid-compile`
    运行。
-3. 调整图片清晰度。修改.svg文件，修改宽度width="1600",高度height="100%"，保存，点击右上角第一个
+3. 调整图片清晰度。修改.svg文件，修改宽度width="1600",高度height="100%"，（根据具体需要可自定义），保存，点击右上角第一个
    “预览SVG”，选择`Export PNG`将图片保存为.png格式。
 4. 将图片插入.rmd文件文件。在R的代码块里面利用`knitr::include_graphics`插入图片。
 
