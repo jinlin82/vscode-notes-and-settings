@@ -191,7 +191,10 @@ graph LR;
 
 ## R 支持
    1. Yuki Ueda R package
-   2. 使用 `R.exe` 时不能显示和输入中文，故使用 `radian.exe` 代替, 使用 `pip install radian` 安装
+   2. 使用 `R.exe` 时不能显示和输入中文，故使用 `radian.exe` 代替, 具体步骤为：
+	  - `CMD` 中运行 `pip install radian` 安装
+	  - 快捷键 `Ctrl+Shift+P` 运行命令 `Open settings` 打开 `settings.json` 文件，
+         在其中设置 `"r.rterm.windows": "C:\\Anaconda3\\Scripts\\radian.exe"`
    3. R LSP Client 支持更好，但含有中文时有bug
    4. 备选的 R-tools 也可以支持补全，但没有 R LSP Client 支持的好，并且安装复
       杂，具体安装步骤为：
