@@ -160,15 +160,17 @@ graph LR;
 
 
 # 设置
-1. "`editor.parameterHints`": `false` 关闭函数提示面板
-2. "`editor.suggestOnTriggerCharacters`": `false` Controls whether suggestions
+1. 快捷键 `Ctrl+,` 或通过菜单打开设置窗口
+2. 快捷键 `Ctrl+Shift+P` 运行命令 `Open settings` 打开 `settings.json` 文件
+3. "`editor.parameterHints`": `false` 关闭函数提示面板
+4. "`editor.suggestOnTriggerCharacters`": `false` Controls whether suggestions
    should automatically show up when typing trigger characters.需要时可以使用快
    捷键(在快捷键设置中查询 `trigger suggest`)打开.
-3. 关闭自动更新
+5. 关闭自动更新
    - `python.autoUpdateLanguageServer`
    - `extensions.autoUpdate`
    - `update.enableWindowsBackgroundUpdates`
-4. 减少line number空白。在`设置`里面搜索`glyph`，取消`Glyph Margin`。
+6. 减少line number空白。在`设置`里面搜索`glyph`，取消`Glyph Margin`。
 
 # 编程语言支持
 ## SQL 支持
