@@ -1,0 +1,402 @@
+{
+    "breadcrumbs.enabled": false,
+    "clock.alignment": "Right",
+    "clock.format": "HH:MM",
+    "editor.fontFamily": "Consolas, Microsoft YaHei,'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.glyphMargin": false,
+    "editor.hover.delay": 1000,
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "editor.parameterHints.enabled": false,
+    "editor.renderControlCharacters": true,
+    "editor.renderIndentGuides": false,
+    "editor.suggestSelection": "first",
+    // "editor.suggestOnTriggerCharacters": false, // 不能设置为 false ，否则markdown中latex公式没有自动补全
+    "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
+    "explorer.sortOrder": "type",
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": false,
+    "global-config.folder": "C:\\Worktools\\Config\\\\.vscode",
+    "task.problemMatchers.neverPrompt": {
+       "process": true
+    },
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "none",
+    "window.openFoldersInNewWindow": "off",
+    "window.title": "${dirty}${separator}${rootPath} ${separator} ${activeEditorMedium}",
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.startupEditor": "newUntitledFile",
+    "zenMode.centerLayout": false,
+
+
+// ============================== Live Share =============================
+    "vsls-pomodoro.intervalDuration": 5,
+    "insertDateString.formatDate": "YYYY-MM-DD ",
+    "insertDateString.format": "YYYY-MM-DD DDD hh:mm",
+    "chat.autoLaunchLiveShareChat": false,
+    "liveshare.presence": true,
+
+    // polacode
+    "polacode.target": "snippet",
+    "polacode.transparentBackground": true,
+
+
+    // rewrap settings
+    "rewrap.autoWrap.enabled": true,
+    "rewrap.wrappingColumn": 80,
+
+    // 
+    "npm.exclude": "",
+    "ActiveFileInStatusBar.fullpath": false,
+    "ActiveFileInStatusBar.color": "blue",
+
+    // todoist
+    "todoist.apiToken": "2d9fb5e5a53b0d2ddaeacf34f9d1744fdad06cd0",
+    "todoist.projectId": "2226611650", 
+
+    // trello   
+    "trelloViewer.viewColumn": 1,
+
+    // file support
+    "csv-preview.lineNumbers": "ordinal",
+    "csv-preview.theme": "light",
+    "latex-workshop.message.update.show": false,
+
+// ============================= python settings ==========================
+    "python.linting.enabled": false,
+    "python.linting.maxNumberOfProblems": 0,
+    "python.linting.lintOnSave": false,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pylintUseMinimalCheckers": false,
+    "python.pythonPath": "C:\\Anaconda3\\python.exe",
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "jupyter.alwaysTrustNotebooks": true,
+	"jupyter.sendSelectionToInteractiveWindow": true,
+    "python.autoComplete.addBrackets": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+
+    "macros": {  // update: requires macros extension by publisher:"geddski" 
+        "pythonExecSelectionAndCursorDown": [
+            "jupyter.execSelectionInteractive", 
+            //"vscode.window.activeTextEditor.show()",
+            "cursorDown" 
+        ]
+    },
+    "[python]": {},
+    "python.autoUpdateLanguageServer": false,
+    "python.analysis.cacheFolderPath": "C:\\Worktools\\VSCode-win32-x64-1.51.1\\data\\user-data\\Python Language Server",
+    // "python.jediEnabled": false, // 不能要此行，否则scipy.stats中的在py文件中补全有问题，并且要关闭 vscode intell 
+
+// ============================= R settings ===============================
+    "r.rterm.windows": "C:\\Anaconda3\\Scripts\\radian.exe",
+    "r.rterm.option": [
+        "--no-site-file"
+    ],
+    "r.lsp.debug": true,
+    "r.editor.bracesOnNewLine": true,
+    // "r.lsp.path": "C:\\Worktools\\R\\R-3.6.3\\bin\\x64\\R.exe",
+    "r.bracketedPaste": true,
+
+// ============================= R markdown ================================
+    "markdown.preview.breaks": true,
+    "markdownShortcuts.icons.image": true,
+    "markdownShortcuts.bullets.marker": "-",
+    "markdown-preview-enhanced.mermaidTheme": "default",
+    "markdownlint.run": "onSave",
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    
+    "markdown.extension.print.absoluteImgPath": false,
+    "[rmd]": {},
+    "[lisp]": {},
+
+    "markdown-run-snippet.mdToVscodeTypeMap": {
+	"{python}": "python",
+	"{r}": "r"
+    },
+
+// ========================== Project Manager ==============================
+    "projectManager.groupList": true,
+    "projectManager.git.maxDepthRecursion": 4,
+    "projectManager.git.baseFolders": [
+        "C:/Works",
+    ],
+    "projectManager.vscode.baseFolders": [
+        "C:/Works",
+    ],
+
+
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+// ============================= TODO config =========================
+    "todo-tree.general.statusBar": "top three",
+    "todo-tree.general.tags": [
+	"TODO",
+	"FIXME",
+	"DONE"
+    ],
+
+    "todo-tree.highlights.defaultHighlight": {
+	// "icon": "alert",
+	"type": "text",
+	"foreground": "red",
+	"background": "black",
+	"opacity": 0,
+	// "iconColour": "blue"
+    },
+
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            // "icon": "check",
+            "iconColour": "blue",
+            // "type": "line",
+        },
+
+        "DONE": {
+            "icon": "check",
+            "iconColour": "green"
+            // "type": "line"
+        },
+        "FIXME": {
+            "icon": "alert",
+            // "foreground": "red",
+            "iconColour": "brown"
+        }
+    },
+
+    "todohighlight.keywords": [
+        "TODO",
+        "FIXME",
+        "DONE"
+    ],
+    // "todohighlight.isCaseSensitive": false,
+    "todohighlight.defaultStyle": {
+        "color": "red",
+        "backgroundColor": "#ffab00",
+        // "overviewRulerColor": "#ffab00",
+        "cursor": "pointer",
+        // "border": "1px solid #eee",
+        "borderRadius": "2px",
+        // "isWholeLine": true,
+        //other styling properties goes here ... 
+    },
+
+
+// ======================= cSpell ==========================
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "git-commit",
+        "go",
+        "handlebars",
+        "haskell",
+        "html",
+        "jade",
+        "java",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "jsonc",
+        "latex",
+        "less",
+        "php",
+        "plaintext",
+        "pug",
+        "restructuredtext",
+        "rust",
+        "scala",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+        "yml"
+    ],
+
+// ========================= Leetcode ===========================
+    "leetcode.workspaceFolder": "c:\\Worktools\\Config\\.lc",
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.showCommentDescription": true,
+    "leetcode.hint.commentDescription": false,
+    "leetcode.hint.commandShortcut": false,
+
+
+// =========================== git ====================================
+    "git.confirmSync": false,
+    "githubNotificationsBell.oauthToken": "fd17ac0729699e90a1fd8c55c8984466bac2a848",
+    "githubNotificationsBell.alignment": "left",
+    "githubNotificationsBell.hideIfNone": false,
+    "gitlens.currentLine.enabled": false,
+
+// ================================= multiCommand =====================
+
+    "multiCommand.commands": [
+	{
+            "command": "multiCommand.sqlRunandStep",
+            "sequence": [
+		"workbench.action.terminal.runSelectedText",
+		"cursorDown",
+            ]
+	},
+	{
+            "command": "multiCommand.postgresRunandStep",
+            "sequence": [
+		"expandLineSelection",
+		"vscode-postgres.runQuery",
+		"cursorHome",
+            ]
+	},
+	{
+            "command": "multiCommand.PythonRuninTerminalandStep",
+            "sequence": [
+		"python.execSelectionInTerminal",
+		"cursorDown",
+            ]
+	},
+    ],
+
+
+//  ========================== RSSReader ============================
+    "RSSReader.Feeds": [
+	{
+	    "identifier": "Github",
+	    "title": "Github news",
+	    "url": "https://github.com/jinlin82.private.atom?token=AD64GJYCTNRTIUZADJBP5HF4QFIYM"
+	}
+    ],
+    "RSSReader.OpenType": "OpenLink",
+
+// ============================ mermaid ============================== 
+    "mermaid-editor.generate.height": 1200,
+    "mermaid-editor.generate.width": 600,
+    "svg.preview.mode": "svg",
+    "svg.preview.autoShow": true,
+    "mermaid-editor.preview.backgroundColor": "",
+
+    "files.autoGuessEncoding": true,
+    "enableTelemetry": false,
+
+
+    "todo.file.include": [
+        "**/TODO",
+        "**/TODOS",
+        "**/*.TODO",
+        "**/*.TODOS",
+        "**/*.todo",
+        "**/*.todos",
+        "**/*.task",
+        "**/*.tasks",
+        "**/*.taskpaper",
+        "**/todolist.txt",
+        "**/*.org",
+        "**/*.Org",
+        "**/*.ORG"
+    ],
+    "git-graph.fetchAndPrune": true,
+	
+"workbench.colorCustomizations": {
+
+    "[Visual Studio Light]": {  "tab.activeBackground": "#c2c8d6", 
+                                "tab.inactiveBackground": "#c5c5ce", 
+                                "tab.border": "#d7d9e0",
+                                "tab.activeForeground": "#ae0404",
+                                 "tab.inactiveForeground": "#4b4d4f",
+                                 "tab.unfocusedActiveBackground": "#d7dbdd",
+                                 "tab.unfocusedActiveForeground": "#b67e7e",
+                                 "titleBar.activeForeground": "#5a0482",
+                                 "terminal.foreground": "#4e0505"
+                            },
+    "[Visual Studio Dark]": {"tab.activeBackground": "#514F4F"},
+},
+
+"customizeUI.fontSizeMap": {
+    "window-title": "15px", // Window title font when using custom titlebar
+    "tab-title": "14px",    // Used for editor tab titles
+},
+"window.menuBarVisibility": "toggle",
+"material-icon-theme.folders.color": "#26a69a",
+"workbench.iconTheme": "material-icon-theme",
+"path-intellisense.mappings": {
+    "/": "${workspaceFolder}",
+    "lib": "${workspaceFolder}/lib",
+},
+// 运行python 时 cwd 设置, python.execInTerminal pwd 可以先运行
+// python.execSelectionInTerminal 的pwd再运行，pwd 就是程序文件所在文件夹
+"jupyter.notebookFileRoot": "${fileDirname}", // jupyter console pwd
+"python.terminal.executeInFileDir": true, //python.execInTerminal pwd
+"terminal.integrated.cwd": "${fileDirname}",
+"workbench.editor.revealIfOpen": true,
+"editor.columnSelection": false,
+"todo-tree.general.enableFileWatcher": true,
+"todo-tree.regex.regex": "((//|#|<!--|;|\\*+|^|.*)\\s*($TAGS)|^\\s*- \\[ \\])",
+"todo-tree.highlights.enabled": false,
+"todo-tree.filtering.excludeGlobs": [
+    "**/*.html",
+    "**/*.js",
+    "**/*.json",
+    "**/*.css"
+],
+"python.terminal.activateEnvInCurrentTerminal": true, // Terminal pwd
+"fileheader.author": "JL",
+"fileheader.body": false,
+"fileheader.save": false,
+
+"commentBox.styles": {
+    "defaultStyle": {
+        "capitalize": false,
+        "ignoreInnerIndentation": false,
+        "ignoreOuterIndentation": false,
+        "removeEmptyLines": false,
+        "textAlignment": "left",
+        "commentStartToken": "",
+        "commentEndToken": "##################################",
+        "leftEdgeToken": "# ",
+        "rightEdgeToken": "",
+        "topEdgeToken": "#",
+        "bottomEdgeToken": "#",
+        "topRightToken": "##################################",
+        "bottomLeftToken": "##",
+    }
+},
+"workbench.editorAssociations": [
+    {
+        "viewType": "default",
+        "filenamePattern": "*.pdf"
+    },
+    {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+    }
+],
+"python.languageServer": "Pylance",
+"python.analysis.completeFunctionParens": true,
+
+"workbench.editorAssociations": [{
+    "viewType": "default",
+    "filenamePattern": "*.pdf"
+}
+],
+"vscode-office.markdownType": "hyperMD",
+"lsby_gitee_vscode_plugin.personal_access_tokens": "8587245ffa571f9281035e0b73e4a2f8",
+"workbench.colorCustomizations": {
+    "editorError.foreground": "#f3d6d6d8", // squiggly line
+    "editorWarning.foreground": "#f8f19f", // squiggly line
+},
+"liveshare.account": "jinlin87@hotmail.com",
+"python.showStartPage": false,
+"jupyter.allowUnauthorizedRemoteConnection": true
+}

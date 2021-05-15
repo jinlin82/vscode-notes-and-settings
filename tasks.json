@@ -12,6 +12,14 @@
             ]
         },
         {
+            "label": "rmd-ppt",
+            "type": "process",
+            "command": "rmd-ppt.bat",
+            "args": [
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ]
+        },
+        {
             "label": "rmd-html",
             "type": "process",
             "command": "rmd-html.bat",
@@ -40,10 +48,9 @@
             "label": "bookdown-pdf",
             "type": "process",
             "command": "bookdown-pdf.bat",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "args": [
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ],
 	    "options": {
             "cwd": "${fileDirname}"
     },
@@ -70,7 +77,10 @@
             "command": "mermaid-compile.bat",
             "args": [
                 "${fileDirname}\\${fileBasenameNoExtension}"
-            ]
+            ],
+	    "options": {
+            "cwd": "${fileDirname}"
+    }
         },
     ]
 }
