@@ -398,5 +398,6 @@
 },
 "liveshare.account": "jinlin87@hotmail.com",
 "python.showStartPage": false,
-"jupyter.allowUnauthorizedRemoteConnection": true
+"jupyter.allowUnauthorizedRemoteConnection": true,
+"git.allowForcePush": true
 }
