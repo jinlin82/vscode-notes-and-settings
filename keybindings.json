@@ -448,4 +448,13 @@
         "command": "-revealFileInOS",
         "when": "!editorFocus"
     },
+    {
+        "key": "ctrl+x o",
+        "command": "-workbench.action.navigateEditorGroups"
+    },
+    {
+        "key": "ctrl+x o",
+        "command": "openInExternalApp.open"
+    },
+
 ]

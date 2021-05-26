@@ -35,7 +35,50 @@
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.startupEditor": "newUntitledFile",
     "zenMode.centerLayout": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "path-intellisense.mappings": {
+        "/": "${workspaceFolder}",
+        "lib": "${workspaceFolder}/lib",
+    },
+    
+    "workbench.editor.revealIfOpen": true,
+    "editor.columnSelection": false,
+    
+"workbench.editorAssociations": [
+    {
+        "viewType": "default",
+        "filenamePattern": "*.pdf"
+    },
+    {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+    }
+],
 
+// ================================ Face =================================
+
+"workbench.colorCustomizations": {
+    "[Visual Studio Light]": {  "tab.activeBackground": "#c2c8d6", 
+                                "tab.inactiveBackground": "#c5c5ce", 
+                                "tab.border": "#d7d9e0",
+                                "tab.activeForeground": "#ae0404",
+                                 "tab.inactiveForeground": "#4b4d4f",
+                                 "tab.unfocusedActiveBackground": "#d7dbdd",
+                                 "tab.unfocusedActiveForeground": "#b67e7e",
+                                 "titleBar.activeForeground": "#5a0482",
+                                 "terminal.foreground": "#4e0505"
+                            },
+    "[Visual Studio Dark]": {"tab.activeBackground": "#514F4F"},
+    "editorError.foreground": "#f3d6d6d8", // squiggly line
+    "editorWarning.foreground": "#f8f19f", // squiggly line
+},
+
+"customizeUI.fontSizeMap": {
+    "window-title": "15px", // Window title font when using custom titlebar
+    "tab-title": "14px",    // Used for editor tab titles
+},
+"window.menuBarVisibility": "toggle",
+"material-icon-theme.folders.color": "#26a69a",
 
 // ============================== Live Share =============================
     "vsls-pomodoro.intervalDuration": 5,
@@ -43,6 +86,7 @@
     "insertDateString.format": "YYYY-MM-DD DDD hh:mm",
     "chat.autoLaunchLiveShareChat": false,
     "liveshare.presence": true,
+    "liveshare.account": "jinlin87@hotmail.com",
 
     // polacode
     "polacode.target": "snippet",
@@ -93,17 +137,45 @@
     "[python]": {},
     "python.autoUpdateLanguageServer": false,
     "python.analysis.cacheFolderPath": "C:\\Worktools\\VSCode-win32-x64-1.51.1\\data\\user-data\\Python Language Server",
-    // "python.jediEnabled": false, // 不能要此行，否则scipy.stats中的在py文件中补全有问题，并且要关闭 vscode intell 
+    // "python.jediEnabled": false, // 不能要此行，否则scipy.stats中的在py文件中
+    // 补全有问题，并且要关闭 vscode intell
+    // 运行python 时 cwd 设置, python.execInTerminal pwd 可以先运行
+    // python.execSelectionInTerminal 的pwd再运行，pwd 就是程序文件所在文件夹
+    "jupyter.notebookFileRoot": "${fileDirname}", // jupyter console pwd
+    "python.terminal.executeInFileDir": true, //python.execInTerminal pwd
+    "terminal.integrated.cwd": "${fileDirname}", 
+    "python.showStartPage": false,
+    "jupyter.allowUnauthorizedRemoteConnection": true,
+    "python.languageServer": "Pylance",
+    "python.analysis.completeFunctionParens": true,
+    "python.terminal.activateEnvInCurrentTerminal": true, // Terminal pwd
 
 // ============================= R settings ===============================
-    "r.rterm.windows": "C:\\Anaconda3\\Scripts\\radian.exe",
-    "r.rterm.option": [
-        "--no-site-file"
-    ],
-    "r.lsp.debug": true,
+    "r.rterm.windows": "C:\\Anaconda3\\Scripts\\radian.exe", // R -Yuki
+    // "r.rpath.windows": "C:\\Worktools\\R\\R-3.6.3\\bin\\x64\\R.exe",  // R-lsp
+    "r.terminalPath": "C:\\Anaconda3\\Scripts\\radian.exe", // R-tools
+    "r.interpreterPath": "C:\\Worktools\\R\\R-3.6.3", // R-tools
+    "r.rterm.option": ["--no-site-file"],
     "r.editor.bracesOnNewLine": true,
-    // "r.lsp.path": "C:\\Worktools\\R\\R-3.6.3\\bin\\x64\\R.exe",
     "r.bracketedPaste": true,
+
+    "r.linting.doubleQuotes": false,
+    "r.linting.assignmentType": false,
+    "r.linting.closeCurlySeparateLine": false,
+    "r.linting.multipleDots": false,
+    "r.linting.multipleStatements": false,
+    "r.linting.noSpaceAfterFunctionName": false,
+    "r.linting.noTabs": false,
+    "r.linting.openCurlyPosition": false,
+    "r.linting.pascalCase": false,
+    "r.linting.semicolons": false,
+    "r.linting.spaceBeforeOpenBrace": false,
+    "r.linting.spacesAroundComma": false,
+    "r.linting.spacesAroundOperators": false,
+    "r.linting.spacesInsideParenthesis": false,
+    "r.linting.trailingBlankLines": false,
+    "r.linting.trueFalseNames": false,
+    "r.linting.upperCase": false,
 
 // ============================= R markdown ================================
     "markdown.preview.breaks": true,
@@ -123,6 +195,15 @@
 	"{python}": "python",
 	"{r}": "r"
     },
+    "r.rmarkdown.chunkBackgroundColor": "rgba(128, 128, 128, 0.15)",
+    "r.rmarkdown.codeLensCommands": [
+        "r.runCurrentChunk",
+        "r.runAboveChunks",
+        "r.runBelowChunks",
+        "r.runAllChunks",
+        "r.goToPreviousChunk",
+        "r.goToNextChunk"
+    ],
 
 // ========================== Project Manager ==============================
     "projectManager.groupList": true,
@@ -241,6 +322,9 @@
     "githubNotificationsBell.alignment": "left",
     "githubNotificationsBell.hideIfNone": false,
     "gitlens.currentLine.enabled": false,
+    "lsby_gitee_vscode_plugin.personal_access_tokens": "8587245ffa571f9281035e0b73e4a2f8",
+    "git.allowForcePush": true,
+    "git-graph.fetchAndPrune": true,
 
 // ================================= multiCommand =====================
 
@@ -306,41 +390,8 @@
         "**/*.Org",
         "**/*.ORG"
     ],
-    "git-graph.fetchAndPrune": true,
-	
-"workbench.colorCustomizations": {
+    
 
-    "[Visual Studio Light]": {  "tab.activeBackground": "#c2c8d6", 
-                                "tab.inactiveBackground": "#c5c5ce", 
-                                "tab.border": "#d7d9e0",
-                                "tab.activeForeground": "#ae0404",
-                                 "tab.inactiveForeground": "#4b4d4f",
-                                 "tab.unfocusedActiveBackground": "#d7dbdd",
-                                 "tab.unfocusedActiveForeground": "#b67e7e",
-                                 "titleBar.activeForeground": "#5a0482",
-                                 "terminal.foreground": "#4e0505"
-                            },
-    "[Visual Studio Dark]": {"tab.activeBackground": "#514F4F"},
-},
-
-"customizeUI.fontSizeMap": {
-    "window-title": "15px", // Window title font when using custom titlebar
-    "tab-title": "14px",    // Used for editor tab titles
-},
-"window.menuBarVisibility": "toggle",
-"material-icon-theme.folders.color": "#26a69a",
-"workbench.iconTheme": "material-icon-theme",
-"path-intellisense.mappings": {
-    "/": "${workspaceFolder}",
-    "lib": "${workspaceFolder}/lib",
-},
-// 运行python 时 cwd 设置, python.execInTerminal pwd 可以先运行
-// python.execSelectionInTerminal 的pwd再运行，pwd 就是程序文件所在文件夹
-"jupyter.notebookFileRoot": "${fileDirname}", // jupyter console pwd
-"python.terminal.executeInFileDir": true, //python.execInTerminal pwd
-"terminal.integrated.cwd": "${fileDirname}",
-"workbench.editor.revealIfOpen": true,
-"editor.columnSelection": false,
 "todo-tree.general.enableFileWatcher": true,
 "todo-tree.regex.regex": "((//|#|<!--|;|\\*+|^|.*)\\s*($TAGS)|^\\s*- \\[ \\])",
 "todo-tree.highlights.enabled": false,
@@ -350,7 +401,8 @@
     "**/*.json",
     "**/*.css"
 ],
-"python.terminal.activateEnvInCurrentTerminal": true, // Terminal pwd
+
+// ============================= file header ===========================
 "fileheader.author": "JL",
 "fileheader.body": false,
 "fileheader.save": false,
@@ -372,32 +424,6 @@
         "bottomLeftToken": "##",
     }
 },
-"workbench.editorAssociations": [
-    {
-        "viewType": "default",
-        "filenamePattern": "*.pdf"
-    },
-    {
-        "viewType": "jupyter.notebook.ipynb",
-        "filenamePattern": "*.ipynb"
-    }
-],
-"python.languageServer": "Pylance",
-"python.analysis.completeFunctionParens": true,
+//-----------------------------------------------------------------------
 
-"workbench.editorAssociations": [{
-    "viewType": "default",
-    "filenamePattern": "*.pdf"
-}
-],
-"vscode-office.markdownType": "hyperMD",
-"lsby_gitee_vscode_plugin.personal_access_tokens": "8587245ffa571f9281035e0b73e4a2f8",
-"workbench.colorCustomizations": {
-    "editorError.foreground": "#f3d6d6d8", // squiggly line
-    "editorWarning.foreground": "#f8f19f", // squiggly line
-},
-"liveshare.account": "jinlin87@hotmail.com",
-"python.showStartPage": false,
-"jupyter.allowUnauthorizedRemoteConnection": true,
-"git.allowForcePush": true
 }
