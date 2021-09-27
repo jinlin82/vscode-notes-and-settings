@@ -44,6 +44,13 @@
         }
     },
     {
+        "key": "ctrl+i g",
+        "command": "type",
+        "args": {
+            "text": "```{r imageCodeName, out.width='95%', fig.align='center', fig.pos='H',fig.cap='图名', dev='png', results='markup'}\nknitr::include_graphics('./image_path.png')\n```"
+        }
+    },
+    {
         "key": "ctrl+shift+v",
         "command": "-markdown.showPreview",
         "when": "editorLangId == 'markdown'"
@@ -99,7 +106,7 @@
         "when": "editorTextFocus && editorLangId == 'python'"
     },
     {
-        "key": "shift+enter",
+        "key": "ctrl+shift+enter",
         "command": "multiCommand.PythonRuninTerminalandStep",
         "when": "editorTextFocus && editorLangId == 'python'"
     },
@@ -456,5 +463,74 @@
         "key": "ctrl+x o",
         "command": "openInExternalApp.open"
     },
-
+    {
+        "key": "ctrl+enter",
+        "command": "jupyter.runByLineContinue",
+        "when": "jupyter.notebookeditor.runByLineInProgress && notebookKernelCount > 0"
+    },
+    {
+        "key": "f10",
+        "command": "-jupyter.runByLineContinue",
+        "when": "jupyter.notebookeditor.runByLineInProgress && notebookKernelCount > 0"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "jupyter.runByLine",
+        "when": "!jupyter.notebookeditor.debuggingInProgress && !jupyter.notebookeditor.runByLineInProgress && notebookKernelCount > 0"
+    },
+    {
+        "key": "f10",
+        "command": "-jupyter.runByLine",
+        "when": "!jupyter.notebookeditor.debuggingInProgress && !jupyter.notebookeditor.runByLineInProgress && notebookKernelCount > 0"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "jupyter.runcurrentcelladvance",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.runcurrentcelladvance",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "alt+right",
+        "command": "-subwordNavigation.cursorSubwordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "-subwordNavigation.cursorSubwordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "subwordNavigation.cursorSubwordLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "-subwordNavigation.cursorSubwordLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "subwordNavigation.cursorSubwordRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "-subwordNavigation.cursorSubwordRightSelect",
+        "when": "editorTextFocus"
+    }
 ]

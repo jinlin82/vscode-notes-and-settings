@@ -40,6 +40,7 @@
 
 <!-- markdown-toc end -->
 
+**以下介绍基于 vs code 1.60.1 版本和对于版本的packages**
 
 # 简介
 
@@ -73,6 +74,7 @@
 
 若出错，可以尝试按下快捷键 `Ctrl+shift+P`,输入`project manager: refresh
 projects`,回车刷新项目即可。
+
 ### 生成项目目录树
 1. 利用上步骤方法打开项目之后，点击界面左上角`文件`+`首选项`+`设置`。
 2. 在出现的界面搜索`project git`,点击`在settings.json中编辑`。
@@ -135,9 +137,6 @@ graph LR;
 3. 调整图片清晰度。修改.svg文件，修改宽度width="1600",高度height="100%"，（根据具体需要可自定义），保存，点击右上角第一个
    “预览SVG”，选择`Export PNG`将图片保存为.png格式。
 4. 将图片插入.rmd文件文件。在R的代码块里面利用`knitr::include_graphics`插入图片。
-
-
-
 
 
 # Git 版本控制
@@ -211,14 +210,15 @@ graph LR;
    SQL 介绍中查看。
 
 ## R 支持
-   1. Yuki Ueda R package
+   1. 安装 Yuki Ueda R package
    2. 使用 `R.exe` 时不能显示和输入中文，故使用 `radian.exe` 代替, 具体步骤为：
 	  - `CMD` 中运行 `pip install radian` 安装
 	  - 快捷键 `Ctrl+Shift+P` 运行命令 `Open settings` 打开 `settings.json` 文件，
          在其中设置 `"r.rterm.windows": "C:\\Anaconda3\\Scripts\\radian.exe",`
-   3. R LSP Client 支持更好，但含有中文时有bug
-   4. 备选的 R-tools 也可以支持补全，但没有 R LSP Client 支持的好，并且安装复
-      杂，具体安装步骤为：
+   3. ~~R LSP Client 支持更好，但含有中文时有bug~~ Yuki Ueda R package 0.23 版本
+      以上 **bug 已解决**, 直接使用即可，不需要以下步骤4
+   4. ~~备选的 R-tools 也可以支持补全，但没有 R LSP Client 支持的好，并且安装复
+      杂，具体安装步骤为：~~ **不需以下步骤了**
       - 安装 Vscode R-tools package
       - 下载安装 .net core 2.1 版本(注意版本不能错，64位)，百度网盘下载链接：https://pan.baidu.com/s/10x3bYNkzkvsJmdIZsYaCeQ 提取码：va1q
       - R 要安装注册，让 R-tools 可以自动找到。

@@ -1,5 +1,4 @@
 {
-    "breadcrumbs.enabled": false,
     "clock.alignment": "Right",
     "clock.format": "HH:MM",
     "editor.fontFamily": "Consolas, Microsoft YaHei,'Courier New', monospace",
@@ -25,14 +24,12 @@
     },
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontSize": 16,
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "update.enableWindowsBackgroundUpdates": false,
     "update.mode": "none",
     "window.openFoldersInNewWindow": "off",
     "window.title": "${dirty}${separator}${rootPath} ${separator} ${activeEditorMedium}",
-    "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Visual Studio Light",
+    "window.titleBarStyle": "native",
     "workbench.startupEditor": "newUntitledFile",
     "zenMode.centerLayout": false,
     "workbench.iconTheme": "material-icon-theme",
@@ -44,16 +41,10 @@
     "workbench.editor.revealIfOpen": true,
     "editor.columnSelection": false,
     
-"workbench.editorAssociations": [
-    {
-        "viewType": "default",
-        "filenamePattern": "*.pdf"
-    },
-    {
-        "viewType": "jupyter.notebook.ipynb",
-        "filenamePattern": "*.ipynb"
-    }
-],
+"workbench.editorAssociations": {
+    "*.pdf": "default",
+    "*.ipynb": "jupyter-notebook"
+},
 
 // ================================ Face =================================
 
@@ -76,9 +67,11 @@
 "customizeUI.fontSizeMap": {
     "window-title": "15px", // Window title font when using custom titlebar
     "tab-title": "14px",    // Used for editor tab titles
+    "menu": "14px",         // Used for menu items (windows only)
 },
 "window.menuBarVisibility": "toggle",
 "material-icon-theme.folders.color": "#26a69a",
+
 
 // ============================== Live Share =============================
     "vsls-pomodoro.intervalDuration": 5,
@@ -121,11 +114,15 @@
     "python.linting.pylintEnabled": false,
     "python.linting.pylintUseMinimalCheckers": false,
     "python.pythonPath": "C:\\Anaconda3\\python.exe",
-    "python.dataScience.sendSelectionToInteractiveWindow": true,
-    "jupyter.alwaysTrustNotebooks": true,
+    
 	"jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.jupyterServerType": "local",
+    "jupyter.askForKernelRestart": false,
+    "jupyter.collapseCellInputCodeByDefault": false,
     "python.autoComplete.addBrackets": true,
     "kite.showWelcomeNotificationOnStartup": false,
+    "jupyter.experiments.optInto": [
+    ],
 
     "macros": {  // update: requires macros extension by publisher:"geddski" 
         "pythonExecSelectionAndCursorDown": [
@@ -136,7 +133,7 @@
     },
     "[python]": {},
     "python.autoUpdateLanguageServer": false,
-    "python.analysis.cacheFolderPath": "C:\\Worktools\\VSCode-win32-x64-1.51.1\\data\\user-data\\Python Language Server",
+    "python.analysis.cacheFolderPath": "C:\\Worktools\\VSCode-win32-x64-1.60.1\\data\\user-data\\Python Language Server",
     // "python.jediEnabled": false, // 不能要此行，否则scipy.stats中的在py文件中
     // 补全有问题，并且要关闭 vscode intell
     // 运行python 时 cwd 设置, python.execInTerminal pwd 可以先运行
@@ -151,14 +148,26 @@
     "python.terminal.activateEnvInCurrentTerminal": true, // Terminal pwd
 
 // ============================= R settings ===============================
+//  Yuki R settings
     "r.rterm.windows": "C:\\Anaconda3\\Scripts\\radian.exe", // R -Yuki
-    // "r.rpath.windows": "C:\\Worktools\\R\\R-3.6.3\\bin\\x64\\R.exe",  // R-lsp
-    "r.terminalPath": "C:\\Anaconda3\\Scripts\\radian.exe", // R-tools
-    "r.interpreterPath": "C:\\Worktools\\R\\R-3.6.3", // R-tools
+    "r.rpath.windows": "C:\\Worktools\\R\\R-4.1.1\\bin\\x64\\R.exe",  // R-lsp
+    "r.lsp.enabled": true,
+    "r.lsp.diagnostics": false,
     "r.rterm.option": ["--no-site-file"],
-    "r.editor.bracesOnNewLine": true,
     "r.bracketedPaste": true,
-
+    // error Lens settings
+    "errorLens.enabled": true,
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "info",
+        "warning"
+    ],
+    
+    // R tools settings， Rtools和新版本 Yuki R有冲突, disable
+    "r.terminalPath": "C:\\Anaconda3\\Scripts\\radian.exe", // R-tools
+    "r.interpreterPath": "C:\\Worktools\\R\\R-4.1.1", // R-tools
+    "r.editor.bracesOnNewLine": true,
+    
     "r.linting.doubleQuotes": false,
     "r.linting.assignmentType": false,
     "r.linting.closeCurlySeparateLine": false,
@@ -174,6 +183,7 @@
     "r.linting.spacesAroundOperators": false,
     "r.linting.spacesInsideParenthesis": false,
     "r.linting.trailingBlankLines": false,
+    "r.linting.trailingWhitespace": false,
     "r.linting.trueFalseNames": false,
     "r.linting.upperCase": false,
 
@@ -311,7 +321,7 @@
     "leetcode.defaultLanguage": "python3",
     "leetcode.endpoint": "leetcode-cn",
     "leetcode.hint.configWebviewMarkdown": false,
-    "leetcode.showCommentDescription": true,
+    "leetcode.showDescription": "Both",
     "leetcode.hint.commentDescription": false,
     "leetcode.hint.commandShortcut": false,
 
@@ -322,9 +332,9 @@
     "githubNotificationsBell.alignment": "left",
     "githubNotificationsBell.hideIfNone": false,
     "gitlens.currentLine.enabled": false,
-    "lsby_gitee_vscode_plugin.personal_access_tokens": "8587245ffa571f9281035e0b73e4a2f8",
+    "lsby_gitee_vscode_plugin.personal_access_tokens": "e8892429d51d1e3b3027b735b04c270d",
     "git.allowForcePush": true,
-    "git-graph.fetchAndPrune": true,
+    "git-graph.repository.fetchAndPrune": true,
 
 // ================================= multiCommand =====================
 
@@ -424,6 +434,22 @@
         "bottomLeftToken": "##",
     }
 },
+"security.workspace.trust.untrustedFiles": "open",
+"python.defaultInterpreterPath": "C:\\Anaconda3\\python.exe",
+"todo-tree.tree.showScanModeButton": false,
+"redhat.telemetry.enabled": false,
+"security.workspace.trust.enabled": false,
+"security.workspace.trust.startupPrompt": "never",
+"workbench.colorTheme": "Visual Studio Light",
+"zoombar.uiDisplayOrder": "%",
+"cSpell.showCommandsInEditorContextMenu": false,
+"bookmarks.showCommandsInContextMenu": false,
+"rainbow_csv.enable_context_menu_head": false,
+"code-runner.showRunCommandInEditorContextMenu": false,
+"code-runner.showRunCommandInExplorerContextMenu": false,
+"liveServer.settings.donotShowInfoMsg": true,
+"workbench.activityBar.visible": false,
+
 //-----------------------------------------------------------------------
 
 }
